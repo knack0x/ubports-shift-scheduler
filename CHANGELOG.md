@@ -5,18 +5,25 @@
 > Die folgenden Punkte sind noch offen.
 
 - [ ] Professional Code Review (QML and the Go backend)
+  - [ ] Review durch Mara (Senior Developer & Security Analyst)
+  - [ ] Review durch dedizierten Review-Agent (Agent-Datei noch zu erstellen)
+- [ ] Versionsbump in `manifest.json` (aktuell noch `1.3.1`)
+- [ ] App-ID für Release entscheiden (aktuell `shift-scheduler-dev.knackwurstking`)
 - [x] Update des Go-Toolchains von `1.18` auf `1.27`
 - [x] Update clickable build
 - [x] Anhebung der Mindestversion von `clickable` von `7.1.2` auf `8.8.0`
+- [x] Build via custom Go toolchain (Makefile) mit env-getriebenem AppArmor-Policy (`$ENV{APPARMOR_POLICY}`)
+- [x] App auf `shift-scheduler-dev` umbenannt (App-ID, `manifest.json`, Build)
+- [x] Build-Verzeichnisse in `.gitignore` ignoriert; QML-Import-Pfad für den QML-Language-Server (`.qmlls.ini`)
 
-**Update der Go-Abhängigkeiten in `go.mod` (offen):**
+**Update der Go-Abhängigkeiten in `go.mod`:**
 
-- [x] github.com/leonelquinteros/gotext v1.5.0
-- [x] github.com/mattn/go-sqlite3 v1.14.14
-- [x] github.com/nanu-c/qml-go v0.0.0-20201002212753-238e81315528
-- [x] golang.org/x/sys v0.0.0-20220624220833-87e55d714810
+- [x] github.com/leonelquinteros/gotext v1.7.2
+- [x] github.com/mattn/go-sqlite3 v1.14.52
+- [x] github.com/nanu-c/qml-go v1.0.1
+- [x] golang.org/x/sys v0.49.0 (indirect)
 - [x] ~golang.org/x/text v0.3.0~ [removed]
-- [x] gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+- [x] gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c (indirect)
 
 ## [v1.3.1] - 2023-04-04
 
