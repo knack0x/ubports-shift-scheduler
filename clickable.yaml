@@ -1,10 +1,10 @@
 clickable_minimum_required: 8.8.0
 builder: custom
-kill: shift-scheduler
+kill: shift-scheduler-dev
 install_root_data:
 - manifest.json
-- shift-scheduler.apparmor
-- shift-scheduler.desktop
+- shift-scheduler-dev.apparmor
+- shift-scheduler-dev.desktop
 - assets
 - qml
 build: |
@@ -13,8 +13,8 @@ build: |
   echo [DEBUG] working directory: ${START_DIR}
   cd ../../..
   echo [DEBUG] source directory: $(pwd)
-  go build -o "$BUILD_DIR/md-notes" .
-  echo [DEBUG] executable: $BUILD_DIR/md-notes
+  go build -o "$BUILD_DIR/shift-scheduler-dev" .
+  echo [DEBUG] executable: $BUILD_DIR/shift-scheduler-dev
 image_setup:
   run:
     # 1. Paketquellen updaten und curl + tar installieren

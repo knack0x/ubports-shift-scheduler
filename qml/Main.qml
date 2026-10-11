@@ -6,7 +6,7 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
-    applicationName: "shift-scheduler.knackwurstking"
+    applicationName: "shift-scheduler-dev.knackwurstking"
 
     FontLoader {
         source: "../assets/fonts/FiraCode-VariableFont_wght.ttf"

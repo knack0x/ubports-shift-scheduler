@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	APPLICATION_NAME = "shift-scheduler.knackwurstking"
+	APPLICATION_NAME = "shift-scheduler-dev.knackwurstking"
 	DATABASE_NAME    = "shifts.sql"
 	CONFIG_NAME      = "config.json"
 )

@@ -1,12 +1,12 @@
 {
-  "name": "shift-scheduler.knackwurstking",
+  "name": "shift-scheduler-dev.knackwurstking",
   "description": "A simple shift scheduler app.",
   "architecture": "@CLICK_ARCH@",
   "title": "Shift Scheduler",
   "hooks": {
     "shift-scheduler": {
-      "apparmor": "shift-scheduler.apparmor",
-      "desktop": "shift-scheduler.desktop"
+      "apparmor": "shift-scheduler-dev.apparmor",
+      "desktop": "shift-scheduler-dev.desktop"
     }
   },
   "version": "1.3.1",
