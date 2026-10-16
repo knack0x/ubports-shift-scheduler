@@ -4,7 +4,7 @@ OLD_IFS=$IFS
 IFS=$'\n'
 
 # NOTE: set this to `false` for action, this is a safety thing.
-DEUBUG=true 
+DEBUG=true 
 
 for file in `find . -name 'shift-scheduler-dev*'`; do 
     # Debug-Ausgabe
@@ -12,7 +12,7 @@ for file in `find . -name 'shift-scheduler-dev*'`; do
 
 	if [[ ${DEBUG} == false ]]; then
 		# Removed den `-dev` Kram im Filenamen
-		mv "${file}" -> "${file/shift-scheduler-dev/shift-scheduler}"
+		mv "${file}" "${file/shift-scheduler-dev/shift-scheduler}"
 	fi
 done
 
