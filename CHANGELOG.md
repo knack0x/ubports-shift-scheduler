@@ -15,7 +15,7 @@
 - [x] Build via custom Go toolchain (Makefile) mit env-getriebenem AppArmor-Policy (`$ENV{APPARMOR_POLICY}`)
 - [x] App auf `shift-scheduler-dev` umbenannt (App-ID, `manifest.json`, Build)
 - [x] Build-Verzeichnisse in `.gitignore` ignoriert; QML-Import-Pfad für den QML-Language-Server (`.qmlls.ini`)
-- [x] `.scripts/to-release.sh`: `shift-scheduler-dev`-Suffix entfernen (Dateinamen + Inhalte) für den Move auf release/main
+- [x] `.scripts/to-release.sh`: `shift-scheduler-dev`-Suffix entfernen (Dateinamen + Inhalte) für den Move auf release/main (macOS & Linux)
 
 **Update der Go-Abhängigkeiten in `go.mod`:**
 
