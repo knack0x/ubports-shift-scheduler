@@ -17,6 +17,7 @@
 - [x] App auf `shift-scheduler-dev` umbenannt (App-ID, `manifest.json`, Build)
 - [x] Build-Verzeichnisse in `.gitignore` ignoriert; QML-Import-Pfad für den QML-Language-Server (`.qmlls.ini`)
 - [x] Release-Workflow-Skripte hinzugefügt (`.scripts/to-release.sh`, `.scripts/to-devel.sh` als Stub)
+- [x] `.workspace/` (Agent-Persona-State) in `.gitignore` ignoriert
 
 **Update der Go-Abhängigkeiten in `go.mod`:**
 
