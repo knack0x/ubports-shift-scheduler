@@ -4,7 +4,7 @@ OLD_IFS=$IFS
 IFS=$'\n'
 
 # NOTE: set this to `false` for action, this is a safety thing.
-DEBUG=true 
+DEBUG=true
 
 for file in `find . -name 'shift-scheduler-dev*'`; do 
     # Debug-Ausgabe
@@ -25,7 +25,19 @@ for line in `grep --exclude='*.git/*' --exclude='*CHANGELOG.md' --exclude='*.ses
     
 	if [[ ${DEBUG} == false ]]; then
 		# Ersetzt den Kram direkt in der Datei
-		sed -i 's/shift-scheduler-dev/shift-scheduler/g' "${file}"
+
+		# Linux only
+		#sed -i 's/shift-scheduler-dev/shift-scheduler/g' "${file}"
+
+		# Cross Platform (macOS & Linux)
+		perl -i -pe 's/shift-scheduler-dev/shift-scheduler/g' "${file}"
+
+		# macOS sed
+		#if [[ "$OSTYPE" == "darwin"* ]]; then
+		#	sed -i '' 's/shift-scheduler-dev/shift-scheduler/g' "${file}"
+		#else
+		#	sed -i 's/shift-scheduler-dev/shift-scheduler/g' "${file}"
+		#fi
 	fi
 done
 
