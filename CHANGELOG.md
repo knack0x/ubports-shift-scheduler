@@ -8,16 +8,14 @@
   - [ ] Review durch Mara (Senior Developer & Security Analyst)
   - [ ] Review durch dedizierten Review-Agent (Agent-Datei noch zu erstellen)
 - [ ] Versionsbump in `manifest.json` (aktuell noch `1.3.1`)
-- [ ] App-ID für Release entscheiden (aktuell `shift-scheduler-dev.knackwurstking`)
-- [ ] `.scripts/to-devel.sh` ausarbeiten (aktuell nur Stub)
+- [ ] `.scripts/to-devel.sh` ausarbeiten (Reverse Workflow `shift-scheduler` → `shift-scheduler-dev`, aktuell nur Stub)
 - [x] Update des Go-Toolchains von `1.18` auf `1.27`
 - [x] Update clickable build
 - [x] Anhebung der Mindestversion von `clickable` von `7.1.2` auf `8.8.0`
 - [x] Build via custom Go toolchain (Makefile) mit env-getriebenem AppArmor-Policy (`$ENV{APPARMOR_POLICY}`)
 - [x] App auf `shift-scheduler-dev` umbenannt (App-ID, `manifest.json`, Build)
 - [x] Build-Verzeichnisse in `.gitignore` ignoriert; QML-Import-Pfad für den QML-Language-Server (`.qmlls.ini`)
-- [x] Release-Workflow-Skripte hinzugefügt (`.scripts/to-release.sh`, `.scripts/to-devel.sh` als Stub)
-- [x] `.workspace/` (Agent-Persona-State) in `.gitignore` ignoriert
+- [x] `.scripts/to-release.sh`: `shift-scheduler-dev`-Suffix entfernen (Dateinamen + Inhalte) für den Move auf release/main
 
 **Update der Go-Abhängigkeiten in `go.mod`:**
 
